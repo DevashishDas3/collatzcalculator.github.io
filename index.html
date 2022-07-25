@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100&family=Space+Grotesk&display=swap" rel="stylesheet">
+</head>
+<body >
+    <header id="topNav">
+        <div class = "navcontainer">
+            <nav class = "navbar" id = "Nav">
+                <ul>
+                    <li><a href = "#">Calculator</a></li>
+                    <li><a href = "#">About</a></li>
+                    <li><a href = "#">Lothar Collatz</a></li>
+                    <li><a href = "#">Devashish Das</a></li>
+                    <li><a href = "#">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>         
+    </header>
+    <h1 onload="document.body.style.opacity='1'" id = "conjecthead" class = "conjecthead">Collatz Calculator</h1>
+    <div id = "rendermath" class = "container">
+
+
+    <label for = "testnumber" class = "inputform">Enter A Number To Test For The Collatz Conjecture:<br>
+        <input id = "testnumber" type="number" placeholder="Enter a number...">
+        <button class = "submit" id = "submit">SUBMIT</button>
+    </label>
+
+    <style>
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button{
+            -webkit-appearance: none;
+
+        }
+    </style>
+
+    <script src="index.js">
+    </script>
+    
+    </div>
+    <img src="CollatzGraph_1300Lede.jpeg" class = "collatzgraph"><img>
+
+    <div class = "aboutcontainer">
+        <h1 class = "abouthead">What Is The Collatz Conjecture?</h1>
+    </div>
+</body>
+</html>
+
+<!--<iframe class="vertvid" width="560" height="315" src="https://www.youtube.com/embed/094y1Z2wpJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+<!--<input id = "testnumber" type="number">
+    <button class = "submit" id = "submit">SUBMIT</button>-->
