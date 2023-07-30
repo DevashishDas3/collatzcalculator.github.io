@@ -1,4 +1,4 @@
-# CollatzCalculator
+# CollatzCalculator (my first coding project ever)
 Beta of the collatz calculator
 
 
