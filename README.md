@@ -3,9 +3,19 @@ Beta of the collatz calculator
 
 
 
-CHANGES:
+POSSIBLE CHANGES:
+
+
 -Backend tracking implement
+
+
 -Smoother nav
+
+
 -C/C++ calculation
+
+
 -About
+
+
 -Sign/Portal
