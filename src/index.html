@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollatzCalc</title>
+    <link rel = "stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<div >
+    <header id="topNav">
+        <div class = "navcontainer">
+            <nav class = "navbar" id = "Nav">
+                <ul>
+                    <li><a href = "#">Calculator</a></li>
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#lothar">Lothar Collatz</a></li>
+                    <li><a href = "#dev">Devashish Das</a></li>
+                    <li><a href = "#dev">Contact</a></li>
+                </ul>
+            </nav>
+        </div>         
+    </header>
+    <!--<h1 onload="document.body.style.opacity='1'" id = "conjecthead" class = "conjectwelcome">Collatz Calculator</h1> -->
+    
+<div class = "topcontainer" id ="topcontainer">
+    <h1 onload="document.body.style.opacity='1'" id = "conjecthead" class = "conjecthead">Collatz Calculator</h1>
+    <div id = "rendermath" class = "container">
+
+
+    <label for = "testnumber" class = "inputform">Enter A Number To Test For The Collatz Conjecture:<br>
+        <input id = "testnumber" type="number" placeholder="Enter a number...">
+        <button class = "submit" id = "submit">SUBMIT</button>
+    </label>
+</div>
+    <style>
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button{
+            -webkit-appearance: none;
+
+        }
+    </style>
+
+    <script src="index.js">
+    </script>
+    
+    </div>
+
+
+    <div id = "about" class = "aboutcontainer">
+        <h1 id = "about" class = "abouthead">What Is The Collatz Conjecture?</h1>
+        <p class = "about_text">The Collatz Conjecture, put simply, is a conjecture issued by Lothar Collatz that states that all positive integers fit the rule: If odd, multiply the number by three and then add one and, if even, divide by two. What this means is that you take some starting number and you either mutiply it by three and add one or divide by two depending on whether the number is odd or even. After doing so, you will get another number which you need to apply the same rules to based on whether that number is even or odd. If you keep doing this for any number, the collatz conjecture says that you will eventually end with the integer 1, no matter how large or how small the number is. However, this conjecture has yet to be mathematically proven, so feel free to find a case in which it does not because I bet you can't!</p>
+        <img src="CollatzGraph_1300Lede.jpeg" class = "collatzgraph"><img>
+    </div>
+
+    <div class = "lothar" id = "lothar">
+        <h1 class = "lothar_title" >Lothar Collatz</h1>
+        <p class = "lothar_text">Lothar Collatz was a renowned German mathematician that produced the conjecture for the calculator above. Collatz publically released the conjecture in 1937. Though he is known by most for this conjecture, he also worked with Ulrich Sinogowitz in 1957 to publish the paper that ultimately founded the study of Spectral Graph Theory. Sinogowitz sadly was killed in the bombing of Darmstadt in World War II. Collatz studied at universities in Germany including the University of Berlin under Alfred Klose, receiving his doctorate in 1935 for a dissertation entitled Das Differenzenverfahren mit höherer Approximation für lineare Differentialgleichungen (The finite difference method with higher approximation for linear differential equations). He then worked as an assistant at the University of Berlin, before moving to the Technical University of Karlsruhe in 1935. There he also habilitated in 1937. From 1938 to 1943 he worked as a Privatdozent in Karlsruhe. In the war years he worked with Alwin Walther at the Institute for Practical Mathematics of the Technische Hochschule Darmstadt. The honors he recieved include member in the Hamburg Mathematical Society, being elected to the Academy of Sciences Leopoldina, and honorary degrees from every university in which he studied. Collatz passed away September 26 of 1990, however, his influence still lives on as mathematicians are still trying to prove the collatz conjecture to this day. The latest prize offered for proving the collatz conjecture is 120 million Japanese Yen.</p>
+        <img class = "collatzimg" src="Screen Shot 2022-09-05 at 2.12.09 PM.png"><img>
+    </div>
+    <div  id = "dev" class = "devashish_das">
+        <h1 class = "dev_title">Devashish Das</h1>
+        <p class = "dev_text">Hey! My name is Devashish Das, or Dev for short, and I am a high schooler from the Massachussetts area that is currently in my sophomore year of high school. The main reason for why I created this website is because I wanted to try to implement the javascript code that I created to model this conjecture and I also wanted to pay homage to Lothar Collatz. Linked below this is my email for any inquiries and my github if you are interested in any other projects I have created. This is one of the first programming projects I have created so if you want reach out and provide criticisms, that would definetly be helpful. Thanks for using the site!</p>
+    </div>
+
+    <a class = "gitlink" href="https://github.com/DevashishDas3" target="_blank">
+        <div class="wrapper">
+            <div class="button">
+               <div class="icon">
+                  <i class="fab fa-github"></i>
+               </div>
+               <span>Github</span>
+            </div>
+        </div>
+    </a>
+<style>
+    .mail-icon{
+        color: darkslategray;
+        font-size: 4rem;
+        margin-left: 0.3rem;
+        transition: all 0.3s ease-out;
+    }
+    .mail-icon:hover{
+        color: black;
+    }
+</style>
+    <a class = "mail-icon" href="mailto:dedas2024@gmail.com" target = "_blank">
+    <ion-icon name="mail-outline"></ion-icon>
+    </a>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
