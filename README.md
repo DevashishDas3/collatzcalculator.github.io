@@ -6,9 +6,6 @@ My first coding project
 POSSIBLE CHANGES:
 
 
--Backend tracking implement
-
-
 -Smoother nav
 
 
